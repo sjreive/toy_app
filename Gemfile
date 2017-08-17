@@ -16,9 +16,9 @@ gem 'sass-rails', '5.0.6'
 gem 'uglifier', '3.2.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
-
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '4.2.2'
+gem 'jquery-rails', '4.3.1'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem 'turbolinks', '5.0.1'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
@@ -33,10 +33,7 @@ gem 'jbuilder', '2.7.0'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug', platforms: :mri
-  # Adds support for Capybara system testing and selenium driver
-  gem 'capybara', '~> 2.13'
-  gem 'selenium-webdriver'
+  gem 'byebug', '9.0.6', platform: :mri
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3', '1.3.13'
 end
@@ -50,9 +47,7 @@ group :development do
   gem 'spring-watcher-listen', '2.0.1'
 end
 group :production do
- 
   gem 'pg', '0.20.0'
-  
 end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
