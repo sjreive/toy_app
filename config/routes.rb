@@ -7,3 +7,7 @@ Rails.application.routes.draw do
   resources :users
   root 'users#index'
 end
+
+Rails.application.routes.draw do
+  root 'application#hello'
+end
